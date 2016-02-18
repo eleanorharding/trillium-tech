@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'robotolight';
+    src: url('../fonts/roboto_light_macroman/Roboto-Light-webfont.eot');
+    src: url('../fonts/roboto_light_macroman/Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto_light_macroman/Roboto-Light-webfont.woff') format('woff'),
+         url('../fonts/roboto_light_macroman/Roboto-Light-webfont.ttf') format('truetype'),
+         url('../fonts/roboto_light_macroman/Roboto-Light-webfont.svg#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+  font-family: 'robotolight';
+}
+
+.stars, .twinkling, .earth, .content{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+.content, .coming-soon-div {
+  text-align: center;
+  z-index: 200;
+}
+
+.trillium-logo {
+  margin-top:200px;
+}
+
+.coming-soon-div {
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:10%;
+  display:block;
+}
+
+.who-we-are {
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  color: #7392ae;
+  margin: 30px 0px 60px 0px;
+}
+
+.contact-us {
+ 
+}
+
+.contact-us a {
+  padding: 10px 20px;
+  background-color: #333;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 5px;
+
+  transition: 2s ease background-color, 0.5s ease letter-spacing;
+}
+
+.contact-us a:hover {
+  background-color: #01498c;
+  letter-spacing: 6px;
+}
+
+.earth {
+  background:transparent url(../img/earth-space2.png) no-repeat bottom center; 
+  z-index: 100;
+  background-size: 100% auto;
+}
+
+.stars {
+  background:transparent url(../img/stars.png) repeat top center;
+  z-index:0;
+}
+
+.twinkling{
+  background:transparent url(../img/twinkling.png) repeat top center;
+  z-index:1;
+
+  -moz-animation:move-twink-back 500s linear infinite;
+  -ms-animation:move-twink-back 500s linear infinite;
+  -o-animation:move-twink-back 500s linear infinite;
+  -webkit-animation:move-twink-back 500s linear infinite;
+  animation:move-twink-back 500s linear infinite;
+}
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+p {
+  color: #fff;
+}
+
